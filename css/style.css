@@ -62,6 +62,8 @@ button, input, textarea { font: inherit; }
   justify-content: center;
   gap: 22px;
   margin-left: auto;
+  margin-right: auto;
+
 }
 
 .nav-links a,
@@ -277,9 +279,9 @@ button, input, textarea { font: inherit; }
 
 .skills-grid,
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 .skill-card {
@@ -479,6 +481,16 @@ code {
 .footer p { color: var(--muted); font-size: 13px; }
 .footer-links { display: flex; gap: 18px; }
 
+.my-background-div {
+  background-image:url('/images/profile-photo.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  width: 100%;
+  min-height: 400%;
+}
+
+
 @media (max-width: 900px) {
   .nav-links { gap: 13px; }
   .hero,
@@ -525,4 +537,9 @@ code {
 
   .timeline-item { grid-template-columns: 1fr; gap: 8px; }
   .footer-content { padding: 25px 0; }
+}
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }

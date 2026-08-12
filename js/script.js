@@ -10,7 +10,7 @@ if (menuToggle && navLinks) {
     link.addEventListener("click", () => navLinks.classList.remove("open"));
   });
 }
-
+z``
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
 document.querySelectorAll(".nav-links a").forEach(link => {

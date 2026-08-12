@@ -1,0 +1,1 @@
+Fix Projects, fixed nav not centerd, fixed icon, adding my face
